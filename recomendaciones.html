@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Papelería Alexito</title>
+</head>
+<body bgcolor="#ffffff" class="container">
+    <table class="td1">
+        <tr>
+            <td align="center">
+                <img src="imagenes/BANNER.png" class="img" >
+            </td>
+            <td>
+                    <td class="t1" align="center">
+                        ¡Bienvenido a Papelería Alexito!<br>
+                       <table>
+                        <td class="t2">
+                               Tu destino para todo lo que necesitas en papelería.<br>        
+                            </table>
+                            <table>
+                                <td class="t3">  
+                                        Calidad y variedad en un solo lugar.
+                                    </table>
+        
+                        </td>
+                </tr>
+            </td>
+        </tr>    
+    </table>
+    <tr>
+        <td colspan="2" class="td1">
+          <nav class="menu">
+            <ul class="texto">
+                <li><a href="index.html"> INICIO &nbsp;<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="menu.html"> MENÙ &nbsp;<i class="fa-solid fa-house"></i></a></li>  
+                <li><a href="anexos.html"> ANEXOS &nbsp;<i class="fa-solid fa-house"></i></a></li>
+                <li><a href="recomendaciones.html"> RECOMENDACIONES &nbsp;<i class="fa-solid fa-house"></i></a></li>
+            </ul>
+          </nav>
+        </td>
+      </tr>
+    <div align="center">
+        <div class="container" id="miTabla">
+            <table width="50%" align="center">
+                <tr>
+                    <td colspan="2">
+                        <form action="antencionCliente.php" method="post">
+                            <fieldset>
+                                <legend>ATENCIÓN AL CLIENTE:</legend>
+                                <label for="nombre">NOMBRE:</label> &nbsp;
+                                <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre" maxlength="30" minlength="3" required><br><br>
+
+                                <label for="telefono">TELÉFONO:</label> &nbsp;
+                                <input type="text" id="telefono" name="telefono" placeholder="Ingrese el teléfono" maxlength="14" minlength="10" required><br><br>
+
+                                <label for="direccion">DIRECCIÓN:</label> &nbsp;
+                                <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección" maxlength="50" minlength="20" required><br><br>
+
+                                <label for="correo">CORREO ELECTRÓNICO:</label> &nbsp;
+                                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" maxlength="30" minlength="20" required><br><br>
+
+                                <label for="comentario">COMENTARIO:</label> &nbsp;
+                                <textarea id="comentario" name="comentario" rows="10" cols="30" placeholder="Comentarios y sugerencias" required> </textarea><br><br>
+                                <input type="submit" value="ENVIAR">
+                            </fieldset>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        function verificarCampos() {
+          var nombre = document.getElementById('nombre').value;
+          var email = document.getElementById('email').value;
+          var mensaje = document.getElementById('mensaje').value;
+    
+          // Verificar si los campos están llenos
+          if (nombre !== '' && email !== '' && mensaje !== '') {
+            document.getElementById('myForm').submit();
+          } else {
+            alert('Por favor, completa todos los campos.');
+          }
+        } 
+      </script>
+          <table class="td1">
+            <tr>
+                <td align="center">
+                    <a href="tel:+593995424587">
+                        <img src="imagenes/whast.png" class="icono" >
+                        +593 99 542 4587
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="imagenes/icono2.png" class="icono" >
+                        Papelería Alexito
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://www.tiktok.com/es/" target="_blank">
+                        <img src="imagenes/icono3.png" class="icono" >
+                        Papelería Alexito
+                    </a>
+                </td>
+            </tr>    
+        </table>
+        <table class="td1">
+            <tr>
+                <td align="center">
+                    <img src="imagenes/icono4.png" class="icono" >
+                    Dirección: Parroquia San Juan de Pastocalle Barrio San José
+                </td>
+                <td align="center" >
+                    <img src="imagenes/qr.png" class="img" >
+                </td>
+            </tr>    
+        </table>
+        
+  </body>
+
+
+    <table class="td1">
+        <tr>
+            <td align="center">
+                <a href="tel:+593995424587">
+                    <img src="imagenes/whast.png" class="icono" >
+                    +593 99 542 4587
+                </a>
+            </td>
+        </tr>    
+    </table>
+</body>
+</html>

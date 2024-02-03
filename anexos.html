@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Papelería Alexito</title>
+</head>
+<body bgcolor="#ffffff" class="container">
+    <table class="td1">
+        <tr>
+            <td align="center">
+                <img src="imagenes/BANNER.png" class="img" >
+            </td>
+            <td>
+                <td class="t1" align="center">
+                    ¡Bienvenido a Papelería Alexito!<br>
+                    <table>
+                        <td class="t2">
+                            Tu destino para todo lo que necesitas en papelería.<br>        
+                        </table>
+                        <table>
+                            <td class="t3">  
+                                Calidad y variedad en un solo lugar.
+                            </table>
+
+                    </td>
+                </tr>
+            </td>
+        </tr>    
+    </table>
+    <tr>
+        <td colspan="2" class="td1">
+            <nav class="menu">
+                <ul class="texto">
+                    <li><a href="index.html"> INICIO &nbsp;<i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="menu.html"> MENÙ &nbsp;<i class="fa-solid fa-house"></i></a></li>  
+                    <li><a href="anexos.html"> ANEXOS &nbsp;<i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="recomendaciones.html"> RECOMENDACIONES &nbsp;<i class="fa-solid fa-house"></i></a></li>
+                </ul>
+            </nav>
+        </td>
+    </tr>
+
+    <table align="center" >
+        <div align="center">
+            <div class="container" id="anexos">
+                <h2>Anexos</h2>
+                <div class="image-group">
+                    <img src="imagenes/descarga (2).jpg" class="img3">
+                    <img src="imagenes/descarga_1.jpg" class="img3">
+                    <img src="imagenes/descarga.jpg" class="img3">
+                    <img src="imagenes/img2.png" class="img3">
+                </div>
+                <div class="image-group">
+                    <img src="imagenes/img5.jpg" class="img3">
+                    <img src="imagenes/img4.jpg" class="img3">
+                    <img src="imagenes/img2.png" class="img3">
+                    <img src="imagenes/img6.jpg" class="img3">
+                </div>
+                <div class="image-group">
+                    <img src="imagenes/img7.png" class="img3">
+                </div>
+            </div>
+        </div>            
+    </table>
+
+    <script>
+        function mostrarTablaInicio() {
+            var tablaInicio = document.getElementById("inicio");
+            var tablaMenu = document.getElementById("menu");
+            var tablaAnexos = document.getElementById("anexos");
+            var tablaRecomendaciones = document.getElementById("miTabla");
+
+            tablaInicio.style.display = "none";
+            tablaMenu.style.display = "none";
+            tablaAnexos.style.display = "table";
+            tablaRecomendaciones.style.display = "none";
+        }
+
+        function mostrarTablaMenu() {
+            var tablaInicio = document.getElementById("inicio");
+            var tablaMenu = document.getElementById("menu");
+            var tablaAnexos = document.getElementById("anexos");
+            var tablaRecomendaciones = document.getElementById("miTabla");
+
+            tablaInicio.style.display = "none";
+            tablaMenu.style.display = "table";
+            tablaAnexos.style.display = "none";
+            tablaRecomendaciones.style.display = "none";
+        }
+
+        function mostrarTablaRecomendaciones() {
+            var tablaInicio = document.getElementById("inicio");
+            var tablaMenu = document.getElementById("menu");
+            var tablaAnexos = document.getElementById("anexos");
+            var tablaRecomendaciones = document.getElementById("miTabla");
+
+            tablaInicio.style.display = "none";
+            tablaMenu.style.display = "none";
+            tablaAnexos.style.display = "none";
+            tablaRecomendaciones.style.display = "table";
+        }
+    </script>
+
+    <script>
+        // Esta función se ejecutará cuando el DOM esté completamente cargado
+        document.addEventListener("DOMContentLoaded", function() {
+            mostrarTablaAnexos(); // Muestra la sección de anexos al cargar la página
+        });
+    </script>
+    <table class="td1">
+        <tr>
+            <td align="center">
+                <a href="tel:+593995424587">
+                    <img src="imagenes/whast.png" class="icono" >
+                    +593 99 542 4587
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="imagenes/icono2.png" class="icono" >
+                    Papelería Alexito
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.tiktok.com/es/" target="_blank">
+                    <img src="imagenes/icono3.png" class="icono" >
+                    Papelería Alexito
+                </a>
+            </td>
+        </tr>    
+    </table>
+    <table class="td1">
+        <tr>
+            <td align="center">
+                <img src="imagenes/icono4.png" class="icono" >
+                Dirección: Parroquia San Juan de Pastocalle Barrio San José
+            </td>
+            <td align="center" >
+                <img src="imagenes/qr.png" class="img" >
+            </td>
+        </tr>    
+    </table>
+    
+</body>
+</html>
